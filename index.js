@@ -8,11 +8,11 @@ app.get('/', (req, res) => {
 });
 app.use(express.json());
 
-// app.post('/create',(req,res)=> {
-//   const body = req.body;
-//   todos.push(body);
-//   res.json({message: 'Todo created successfully'});
-// });
+app.post('/create',(req,res)=> {
+  const body = req.body;
+  todos.push(body);
+  res.json({message: 'Todo created successfully'});
+});
 
 // app.get('/todos', (req, res) => {
 //   res.json(todos);
